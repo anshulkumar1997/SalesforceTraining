@@ -1,0 +1,11 @@
+<template>
+    <div style="background:steelblue;padding: 20px;">
+        <lightning-record-form object-api-name="Contact"
+        fields={confields}
+        onsuccess={showmessage}></lightning-record-form>
+        <br />
+        <strong>
+            {smsg}
+        </strong>
+    </div>
+</template>

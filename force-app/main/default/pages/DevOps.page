@@ -1,0 +1,7 @@
+<apex:page controller="Demo_page_controller">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Welcome to DevOps implementation  Page</h1>
+  <p>{!sDemoString}</p>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

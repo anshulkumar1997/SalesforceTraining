@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+    <div style="background: slategrey;padding: 20px;">
+        <lightning-input label="Account Revenue filter"
+        onchange={inputrevenue}></lightning-input>
+        <lightning-button label="Show Account Data"
+        onclick={show}></lightning-button>
+        <br/>
+        <lightning-datatable data={acclist} columns={accfields}
+        key-field="id" hide-checkbox-column="true"></lightning-datatable>
+    </div>
+</template>

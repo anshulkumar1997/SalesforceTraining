@@ -1,0 +1,25 @@
+<template>
+    <div style="background:plum;padding: 10px;">
+        <table class="slds-table slds-table_bordered">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Project Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={projloclist} for:item="proj"> 
+                    <tr key={proj.projno}>
+                        <td>{proj.projno}</td>
+                        <td>{proj.projname}</td>
+                        <td>{proj.projloc}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <lightning-datatable data={projloclist} columns={projfields}
+        key-field="id"></lightning-datatable>
+    </div>
+</template>

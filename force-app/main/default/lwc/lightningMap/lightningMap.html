@@ -1,0 +1,45 @@
+<template>
+
+    <lightning-card title="Map in lwc">
+
+        <lightning-tabset>
+            <lightning-tab label="Map with single address">
+                <lightning-layout multiple-rows="true">
+                    <lightning-layout-item size="10">
+                       <lightning-map map-markers={mapMarkers}> </lightning-map>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="4">
+                        
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-tab>
+            <lightning-tab label="Map with multiple address" title="Map with multiple address">
+                <lightning-layout multiple-rows="true">
+                    <lightning-layout-item size="10">
+                        
+                       <lightning-map map-markers={mapMarkersList} markers-title="Lunch Gems"
+                       onmarkerselect={handleMarkerSelect}
+                       selected-marker-value={selectedMarkerValue}> </lightning-map>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="4">
+                        
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-tab>
+            <lightning-tab label="Map with coordinates">
+                <lightning-layout multiple-rows="true">
+                    <lightning-layout-item size="10">
+                       <lightning-map map-markers={mapMarkersList} markers-title="Lunch Gems"
+                        center={center}> </lightning-map>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="4">
+                        
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-tab>
+        </lightning-tabset>
+
+        
+    </lightning-card>
+    
+</template>

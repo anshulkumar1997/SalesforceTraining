@@ -1,0 +1,17 @@
+<template>
+    <div style="background-color: slategrey;padding:20px;">
+        <lightning-button label="AccountData" onclick={handleClick}></lightning-button>
+        <template if:true={check}>
+        <lightning-datatable data={acclist} columns={accfields} key-field="id"></lightning-datatable>
+    </template>
+        <br />
+        <p>
+            <template if:true={check}>
+                <strong>
+
+                    Its done man
+                </strong>
+            </template>
+        </p>
+    </div>
+</template>

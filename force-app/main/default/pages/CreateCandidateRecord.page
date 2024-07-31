@@ -1,0 +1,61 @@
+<!-- Requirement 5 -->
+
+<apex:page standardController="Candidate__c">
+    
+    <apex:form >
+        
+         <apex:pageBlock title="Candidate Record" >
+            
+            <apex:pageBlockSection title="Contact Information">
+                
+                <apex:inputText label="Legacy Candidate Number" value="{!Candidate__c.Legacy_Candidate_Number__c}" />
+                
+                <apex:inputText label="Street Address 1" value="{!Candidate__c.Street_Address_1__c}" />
+                
+                <apex:inputText label="First Name" value="{!Candidate__c.First_Name__c}" />
+                
+                <apex:inputText label="Street Address 2" value="{!Candidate__c.Street_Address_2__c}" />
+                
+                <apex:inputText label="Last Name" value="{!Candidate__c.Last_Name__c}" />
+                
+                <apex:inputText label="City" value="{!Candidate__c.City__c}" />
+                
+                <apex:inputField label="Email" value="{!Candidate__c.Email__c}" />
+                
+                <apex:inputText label="State/Province" value="{!Candidate__c.State_Province__c}" />
+                
+                <apex:inputField label="Mobile" value="{!Candidate__c.Mobile__c}"/>
+                
+                <apex:inputText label="Zip/Postal Code" value="{!Candidate__c.Zip_Postal_Code__c}" />
+                
+                <apex:inputField label="Phone" value="{!Candidate__c.Phone__c}"/>
+                
+                <apex:inputText label="Country" value="{!Candidate__c.Country__c}" />
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Experience & Education">
+                
+                <apex:inputField value="{!Candidate__c.Currently_Employed__c}" label="Currently Employed" />
+                
+                <apex:inputField value="{!Candidate__c.Education__c}" label="Education" />
+                
+                <apex:inputText label="Current Employer" value="{!Candidate__c.Current_Employer__c}" />
+                
+                <apex:inputText label="Years of Experience" value="{!Candidate__c.Years_of_Experience__c}" />
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+                
+                <apex:commandButton action="{!save}" value="save" />
+                
+                <apex:commandButton action="{!cancel}" value="cancel" />
+                
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+</apex:page>

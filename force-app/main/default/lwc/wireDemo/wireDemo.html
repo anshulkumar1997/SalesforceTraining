@@ -1,0 +1,33 @@
+<template>
+    <lightning-card>
+
+        <h3 slot="title">
+
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+
+            Accounts
+
+        </h3>
+
+        <div class="slds-p-horizontal_small">
+
+            <div style="height: 300px;">
+
+                <lightning-datatable
+
+                        key-field="id"
+
+                        data={data}
+
+                        columns={columns}
+
+                        onrowaction={handleRowActions}>
+
+                </lightning-datatable>
+
+            </div>  
+
+        </div>
+
+    </lightning-card>
+</template>

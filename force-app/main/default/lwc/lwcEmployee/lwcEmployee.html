@@ -1,0 +1,25 @@
+<template>
+<div style="padding: 10px;background:magenta">
+    <strong>
+    Employee name is {empname} <br />
+    Employee Location is {emploc} <br />
+    Employee designation is {emplevel} <br />
+    Salary is {empsal} <br />
+    <template if:true={highsal}>
+        <div style="background:green">
+            High Salaried Employee
+        </div>
+    </template>
+    <template if:true={avgsal}>
+        <div style="background:orange">
+            Average Salaried Employee
+        </div>
+    </template>
+    <template if:true={lowsal}>
+        <div style="background:red">
+            Low Salaried Employee
+        </div>
+    </template>
+    </strong>
+</div>
+</template>
